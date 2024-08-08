@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bill Zhou | About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/makel-dom@1.1.0/lib/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="home" class="uneven-split flex-c full-screen">
+        <div class="center flex-c">
+            <h1 class="title">Bill Zhou</h1>
+            <div id="socials">
+                <a href="https://github.com/blubitz">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6"
+                        aria-hidden="true">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/billzhou2048/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"
+                        aria-hidden="true">
+                        <path
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="mailto:bill.new@outlook.com">
+                    <svg data-name="1-Email" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32">
+                        <path
+                            d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="row">
+                <h3>Projects</h3>
+            </div>
+            <div id="projects-wrapper">
+                <div class="project flex-c" href="/app.html">
+                    <div class="project-image"><img src="img/app.png" alt="app homepage"></div>
+                    <div class="project-desc"><span>Cross-Platform Desktop Application</span></div>
+                </div>
+                <div class="project flex-c" href="/web.html">
+                    <div class="project-image"><img src="img/web.png" alt="website screenshot"></div>
+                    <div class="project-desc">Full Stack Website (E-Commerce)</div>
+                </div>
+                <div class="project flex-c" href="/llm.html">
+                    <div class="project-image"><img src="img/ai.jpeg" alt="image of artificial nuerons"></div>
+                    <div class="project-desc">Large Language Model APIs</div>
+                </div>
+            </div>
+        </div>
+        <div id="skills-wrapper">
+            <hr>
+            <h3>Skills</h3>
+            <div id="my-skills" class="flex-grid"></div>
+        </div>
+
+        <footer>Designed and coded by Bill Zhou using HTML, CSS, JS, Axios, and Makel-Dom</footer>
+    </div>
+
+    <div id="overlay" class="full-screen">
+        <div id="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="64" height="64"
+                style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd"
+                viewBox="0 0 6.827 6.827">
+                <defs>
+                    <style>
+                        .str1 {
+                            stroke: #212121;
+                            stroke-width: .213335;
+                            stroke-linecap: round;
+                            stroke-linejoin: round
+                        }
+                        .fil0 {
+                            fill: none
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_x0020_1">
+                    <g id="_436668208">
+                        <circle id="_436668496" class="fil0" cx="3.413" cy="3.413" r="2.453"
+                            style="stroke:#212121;stroke-width:.213335" />
+                        <path id="_436668520" class="fil0 str1" d="M4.64 2.187 2.187 4.64" />
+                        <path id="_436668568" class="fil0 str1" d="M4.64 4.64 2.187 2.187" />
+                    </g>
+                </g>
+                <path class="fil0" d="M0 0h6.827v6.827H0z" />
+            </svg>
+        </div>
+        <article id="overlay-content"></article>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

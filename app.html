@@ -1,0 +1,36 @@
+<section>
+    <h2>Cross-Platform Desktop Application</h2>
+    <p>
+        I wanted to help people learn Cantonese (to watch Cantonese movies), so I pulled up a GitHub repo with a large
+        database of Cantonese phonetic
+        sound files, downloaded them, referenced them with another repo that mapped characters to their phonetic
+        symbols, and
+        created a desktop dictionary application using Electron and Node.js.
+    </p>
+    <p>
+        The GUI was designed using HTML, CSS and JavaScript, while file system operations were performed with Node.js
+        through secure IPC.
+        The main difficulty was the problem of multiple pitches of the same word, so querying had to be modified to
+        show multiple sounds.
+    </p>
+
+    <p>
+        Later I created a WYSIWYG editor froms sratch within the same Electron application, that indicated the pitches
+        of
+        words under the word itself inside a MS Word-like editor. This was meant to help with writing poetry, as the
+        structure
+        and symmetry of sounds play a big part.
+    </p>
+
+    <img src="/img/wysiwyg.png" alt="text editor" class="row">
+
+    <p>
+        Design was also a big part. I gained inspiration from the UX flow of various applications and created context
+        menus,
+        menu bar buttons and responsive page layouts. Every padding and alignment was carefully designed to make the
+        experience
+        smooth and friendly.
+    </p>
+
+    <img src="/img/dict.png" alt="dictionary" class="row">
+</section>
